@@ -1,0 +1,8 @@
+.team-section__employee-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-section__employee-item {
+  flex-basis: calc((100% - 90px) / 4);
+}

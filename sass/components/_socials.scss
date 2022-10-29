@@ -1,0 +1,39 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials__link {
+  @include flex-templ(null);
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: transparent;
+
+  transition: background-color var(--animation-style);
+
+  &--bg-dark {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
+}
+
+.socials__icon {
+  fill: var(--icon-fill);
+  transition: fill var(--animation-style);
+
+  &--light {
+    fill: #fff;
+  }
+  .socials__link:hover &--transition,
+  .socials__link:focus &--transition {
+    fill: #fff;
+  }
+}

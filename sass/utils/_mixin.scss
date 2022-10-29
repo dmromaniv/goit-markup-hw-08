@@ -1,0 +1,13 @@
+@mixin flex-templ($gap: 10px) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+
+@mixin font-templ($fz: 14px, $lh: 24px, $ls: 0.03em, $cl: #757575) {
+  font-size: $fz;
+  line-height: calc($lh / $fz);
+  letter-spacing: $ls;
+  color: $cl;
+}

@@ -1,0 +1,33 @@
+.acceptance-terms {
+  @include flex-templ(8px);
+}
+
+.acceptance-terms__checked-icon {
+  opacity: 0;
+
+  transition: opacity var(--animation-style);
+}
+
+.acceptance-terms__checkbox:checked
+  + .acceptance-terms__icon
+  > .acceptance-terms__checked-icon {
+  opacity: 1;
+}
+
+.acceptance-terms__checkbox:checked
+  + .acceptance-terms__icon
+  > .acceptance-terms__unchecked-icon {
+  opacity: 0;
+  transition: opacity var(--animation-style);
+}
+
+.acceptance-terms__text {
+  @include font-templ();
+
+  user-select: none;
+}
+
+.acceptance-terms__link {
+  color: var(--accent-color);
+  text-decoration-skip-ink: none;
+}

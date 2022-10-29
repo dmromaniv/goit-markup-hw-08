@@ -1,0 +1,24 @@
+.contacts-list__link {
+  font-style: normal;
+  font-size: var(--secondary-font-size);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+
+  transition: color var(--animation-style);
+
+  &--light-cl {
+    color: var(--extra-page-color);
+  }
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contacts-list__link--active:hover,
+.contacts-list__link--active:focus {
+  color: var(--hover-color);
+}

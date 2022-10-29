@@ -1,0 +1,42 @@
+:root {
+  /* company logo  */
+  --logo-main-color: #2196f3;
+  --logo-header-color: #000000;
+  --logo-footer-color: #ffffff;
+
+  /* text colors */
+  --main-page-color: #212121;
+  --secondary-page-color: #757575;
+  --extra-page-color: #ffffff;
+  --accent-color: #2196f3;
+
+  /* background color */
+  --main-bcg-color: #ffffff;
+  --secondary-bcg-color: #2f303a;
+  --extra-bcg-color: #f5f4fa;
+
+  /* button color */
+  --btn-bcg-main-color: #f5f4fa;
+  --btn-bcg-color: #2196f3;
+  --btn-text-color: #ffffff;
+
+  /* icons style */
+  --icon-fill: #afb1b8;
+  --dark-border-cl: #afb1b8;
+
+  /* hover effects */
+  --hover-color: #2196f3;
+
+  /* overlay */
+  --overlay-color: rgba(33, 150, 243, 0.9);
+
+  /* fonts */
+  --main-font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+  --main-font-size: 16px;
+  --secondary-font-size: 14px;
+
+  /*^ animation */
+
+  --animation-style: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

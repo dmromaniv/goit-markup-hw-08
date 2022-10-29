@@ -1,0 +1,39 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--secondary-bcg-color);
+}
+
+.footer__content-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__slogan {
+  margin: 0 0 20px;
+
+  font-size: var(--secondary-font-size);
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  color: var(--extra-page-color);
+
+  text-transform: uppercase;
+}
+
+.footer__media-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__subscription-block {
+  margin-left: auto;
+  width: 570px;
+}

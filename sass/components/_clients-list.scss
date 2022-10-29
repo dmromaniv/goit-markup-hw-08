@@ -1,0 +1,31 @@
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list__link {
+  @include flex-templ(null);
+
+  width: 170px;
+  height: 92px;
+
+  border: solid 1px var(--dark-border-cl);
+  border-radius: 4px;
+
+  transition: border-color var(--animation-style);
+
+  &:focus,
+  &:hover {
+    border-color: var(--hover-color);
+  }
+}
+
+.clients-list__logo {
+  fill: var(--icon-fill);
+  transition: fill var(--animation-style);
+
+  .clients-list__link:hover &,
+  .clients-list__link:focus & {
+    fill: var(--hover-color);
+  }
+}

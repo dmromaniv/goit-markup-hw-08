@@ -1,0 +1,15 @@
+.logo {
+  font-family: var(--secondary-font-family);
+  @include font-templ(26px, 31px, $cl: null);
+  font-weight: 700;
+  color: var(--logo-main-color);
+  text-decoration: none;
+
+  &__header {
+    color: var(--logo-header-color);
+  }
+
+  &__footer {
+    color: var(--logo-footer-color);
+  }
+}
