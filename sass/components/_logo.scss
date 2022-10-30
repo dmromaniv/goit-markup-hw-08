@@ -1,6 +1,6 @@
 .logo {
   font-family: var(--secondary-font-family);
-  @include font-templ(26px, 31px, $cl: null);
+  @include font-templ(24px, 28px, $cl: null);
   font-weight: 700;
   color: var(--logo-main-color);
   text-decoration: none;
@@ -11,5 +11,9 @@
 
   &__footer {
     color: var(--logo-footer-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font-templ(26px, 31px, $cl: null);
   }
 }

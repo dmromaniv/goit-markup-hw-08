@@ -3,8 +3,12 @@
   top: 50%;
   left: 50%;
 
-  width: 528px;
-  height: 581px;
+  min-width: 320px;
+
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+
   padding: 40px;
 
   background-color: var(--main-bcg-color);
@@ -15,6 +19,10 @@
 
   &--scale-trans {
     transition: scale var(--animation-style) 350ms;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
   }
 }
 

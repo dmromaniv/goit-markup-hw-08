@@ -7,8 +7,37 @@
 
 .footer__content-wrapper {
   display: flex;
-  align-items: baseline;
-  gap: 70px;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
+
+  @media screen and(min-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    // gap: 70px;
+
+    padding-left: 61px;
+    padding-right: 74px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 70px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.footer__contacts-block {
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__logo {
@@ -31,9 +60,27 @@
 .footer__media-block {
   display: flex;
   flex-direction: column;
+
+  text-align: center;
+
+  @media screen and(min-width: 768px) {
+    max-width: 232px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .footer__subscription-block {
-  margin-left: auto;
-  width: 570px;
+  width: 100%;
+
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    width: 570px;
+
+    text-align: left;
+  }
 }

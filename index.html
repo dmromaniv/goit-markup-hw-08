@@ -49,7 +49,11 @@
                   class="header__contact-link"
                   href="mailto:info@devstudio.com"
                 >
-                  <svg class="header__contact-icon" width="16" height="12">
+                  <svg
+                    class="header__contact-icon header__contact-icon--envel"
+                    width="16"
+                    height="12"
+                  >
                     <use href="./images/icons.svg#icon-envelope"></use>
                   </svg>
                   info@devstudio.com
@@ -57,13 +61,27 @@
               </li>
               <li class="header__contact-item">
                 <a class="header__contact-link" href="tel:+380961111111">
-                  <svg class="header__contact-icon" width="10" height="16">
+                  <svg
+                    class="header__contact-icon header__contact-icon--tel"
+                    width="10"
+                    height="16"
+                  >
                     <use href="./images/icons.svg#icon-smartphone"></use>
                   </svg>
                   +38 096 111 11 11
                 </a>
               </li>
             </ul>
+            <button
+              class="header__menu-btn menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              type="button"
+            >
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu_btn"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -145,6 +163,10 @@
             <li class="services-section__item">
               <img
                 class="services-section__img"
+                srcset="
+                  ./images/services/img1-L-@1x.jpg 1x,
+                  ./images/services/img1-L-@2x.jpg 2x
+                "
                 src="images/services/plan.jpg"
                 alt="Створення початкової ідеї"
                 width="370"
@@ -156,6 +178,10 @@
             <li class="services-section__item">
               <img
                 class="services-section__img"
+                srcset="
+                  ./images/services/img2-L-@1x.jpg 1x,
+                  ./images/services/img2-L-@2x.jpg 2x
+                "
                 src="images/services/design.jpg"
                 alt="Створення декількох макетів"
                 width="370"
@@ -167,6 +193,10 @@
             <li class="services-section__item">
               <img
                 class="services-section__img"
+                srcset="
+                  ./images/services/img3-L-@1x.jpg 1x,
+                  ./images/services/img3-L-@2x.jpg 2x
+                "
                 src="images/services/colorpicker.jpg"
                 alt="Підбір кольорів"
                 width="370"
@@ -186,9 +216,17 @@
             <li class="team-section__employee-item employee-card">
               <img
                 class="employee-card__photo"
+                srcset="
+                  ./images/team/img1-s-@1x.jpg         450w,
+                  ./images/team/img1-s-@2x.jpg         900w,
+                  ./images/team/tablet/img1-m-@1x.jpg  354w,
+                  ./images/team/tablet/img1-m-@2x.jpg  708w,
+                  ./images/team/desktop/img1-L-@1x.jpg 270w,
+                  ./images/team/desktop/img1-L-@2x.jpg 540w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                 src="images/team/productDesigner.jpg"
                 alt="Ігор Дем'яненко: Product Designer"
-                width="270"
               />
               <div class="employee-card__content">
                 <h3 class="employee-card__name">Ігор Дем'яненко</h3>
@@ -264,9 +302,17 @@
             <li class="team-section__employee-item employee-card">
               <img
                 class="employee-card__photo"
+                srcset="
+                  ./images/team/img2-s-@1x.jpg         450w,
+                  ./images/team/img2-s-@2x.jpg         900w,
+                  ./images/team/tablet/img2-m-@1x.jpg  354w,
+                  ./images/team/tablet/img2-m-@2x.jpg  708w,
+                  ./images/team/desktop/img2-L-@1x.jpg 270w,
+                  ./images/team/desktop/img2-L-@2x.jpg 540w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                 src="images/team/fDev.jpg"
                 alt="Ольга Рєпіна: Frontend Developer"
-                width="270"
               />
               <div class="employee-card__content">
                 <h3 class="employee-card__name">Ольга Рєпіна</h3>
@@ -342,9 +388,17 @@
             <li class="team-section__employee-item employee-card">
               <img
                 class="employee-card__photo"
+                srcset="
+                  ./images/team/img3-s-@1x.jpg         450w,
+                  ./images/team/img3-s-@2x.jpg         900w,
+                  ./images/team/tablet/img3-m-@1x.jpg  354w,
+                  ./images/team/tablet/img3-m-@2x.jpg  708w,
+                  ./images/team/desktop/img3-L-@1x.jpg 270w,
+                  ./images/team/desktop/img3-L-@2x.jpg 540w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                 src="images/team/marketing.jpg"
                 alt="Микола Тарасов: Marketing"
-                width="270"
               />
               <div class="employee-card__content">
                 <h3 class="employee-card__name">Микола Тарасов</h3>
@@ -420,9 +474,17 @@
             <li class="team-section__employee-item employee-card">
               <img
                 class="employee-card__photo"
+                srcset="
+                  ./images/team/img4-s-@1x.jpg         450w,
+                  ./images/team/img4-s-@2x.jpg         900w,
+                  ./images/team/tablet/img4-m-@1x.jpg  354w,
+                  ./images/team/tablet/img4-m-@2x.jpg  708w,
+                  ./images/team/desktop/img4-L-@1x.jpg 270w,
+                  ./images/team/desktop/img4-L-@2x.jpg 540w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                 src="images/team/uiDesigner.jpg"
                 alt="Михайло Єрмаков: UI Designer"
-                width="270"
               />
               <div class="employee-card__content">
                 <h3 class="employee-card__name">Михайло Єрмаков</h3>
@@ -693,7 +755,7 @@
             >
               <p class="subscription-form__slogan">Підпишіться на розсилку</p>
               <div class="subscription-form__content">
-                <label>
+                <label class="subscription-form__label">
                   <input
                     name="email"
                     class="subscription-form__email-input"
@@ -800,6 +862,70 @@
         </form>
       </div>
     </div>
+    <!-- Mobile-Menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button
+        class="mobile-menu__close-btn js-close-menu"
+        type="button"
+        data-modal-close
+      >
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-mob-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item">
+          <a
+            href="#"
+            class="mobile-menu__nav-link mobile-menu__nav-link--accent"
+            >Студія</a
+          >
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" class="mobile-menu__nav-link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" class="mobile-menu__nav-link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts-list">
+        <li class="mobile-menu__contacts-item">
+          <a
+            href="tel:380961111111"
+            class="mobile-menu__contact-link mobile-menu__contact-link--accent"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link"> Instagram </a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link">Twitter</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link">Facebook</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

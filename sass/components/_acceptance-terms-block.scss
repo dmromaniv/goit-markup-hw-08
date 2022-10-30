@@ -1,5 +1,11 @@
 .acceptance-terms {
-  @include flex-templ(8px);
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 
 .acceptance-terms__checked-icon {
@@ -22,7 +28,11 @@
 }
 
 .acceptance-terms__text {
-  @include font-templ();
+  @include font-templ(12px, 14px, 0.03em);
+
+  @media screen and (min-width: 1200px) {
+    @include font-templ(14px, 24px, null);
+  }
 
   user-select: none;
 }

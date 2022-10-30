@@ -16,8 +16,10 @@
   letter-spacing: 0.06em;
   color: var(--btn-text-color);
 
-  &--main {
-    width: 216px;
+  @media screen and (min-width: 1200px) {
+    &--main {
+      width: 216px;
+    }
   }
 
   &--content-indent {
