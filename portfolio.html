@@ -19,7 +19,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    
+
     <title>Portfolio</title>
   </head>
   <body>
@@ -53,7 +53,11 @@
                   class="header__contact-link"
                   href="mailto:info@devstudio.com"
                 >
-                  <svg class="header__contact-icon" width="16" height="12">
+                  <svg
+                    class="header__contact-icon header__contact-icon--envel"
+                    width="14"
+                    height="10"
+                  >
                     <use href="./images/icons.svg#icon-envelope"></use>
                   </svg>
                   info@devstudio.com
@@ -61,13 +65,27 @@
               </li>
               <li class="header__contact-item">
                 <a class="header__contact-link" href="tel:+380961111111">
-                  <svg class="header__contact-icon" width="10" height="16">
+                  <svg
+                    class="header__contact-icon header__contact-icon--tel"
+                    width="10"
+                    height="14"
+                  >
                     <use href="./images/icons.svg#icon-smartphone"></use>
                   </svg>
                   +38 096 111 11 11
                 </a>
               </li>
             </ul>
+            <button
+              class="header__menu-btn menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              type="button"
+            >
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-menu_btn"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -124,10 +142,17 @@
               <div class="projects-list__img-overlay">
                 <img
                   class="projects-list__img"
-                  src="images/projects/website.jpg"
+                  srcset="
+                    images/projects/mobile/img-s-@1x.jpg  450w,
+                    images/projects/mobile/img-s-@2x.jpg  900w,
+                    images/projects/tablet/img-m-@1x.jpg  354w,
+                    images/projects/tablet/img-m-@2x.jpg  708w,
+                    images/projects/desktop/img-L-@1x.jpg 370w,
+                    images/projects/desktop/img-L-@2x.jpg 740w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
+                  src="images/projects/mobile/website.jpg"
                   alt="Представлення команди вебсайту Технокряк"
-                  width="370"
-                  height="294"
                 />
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
@@ -147,10 +172,17 @@
               <div class="projects-list__img-overlay">
                 <img
                   class="projects-list__img"
+                  srcset="
+                    images/projects/mobile/img-s-@1x-1.jpg  450w,
+                    images/projects/mobile/img-s-@2x-1.jpg  900w,
+                    images/projects/tablet/img-m-@1x-1.jpg  354w,
+                    images/projects/tablet/img-m-@2x-1.jpg  708w,
+                    images/projects/desktop/img-L-@1x-1.jpg 370w,
+                    images/projects/desktop/img-L-@2x-1.jpg 740w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                   src="images/projects/goldenStar.jpg"
                   alt="Баскетболісти"
-                  width="370"
-                  height="294"
                 />
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
@@ -172,10 +204,17 @@
               <div class="projects-list__img-overlay">
                 <img
                   class="projects-list__img"
+                  srcset="
+                    images/projects/mobile/img-s-@1x-2.jpg  450w,
+                    images/projects/mobile/img-s-@2x-2.jpg  900w,
+                    images/projects/tablet/img-m-@1x-2.jpg  354w,
+                    images/projects/tablet/img-m-@2x-2.jpg  708w,
+                    images/projects/desktop/img-L-@1x-2.jpg 370w,
+                    images/projects/desktop/img-L-@2x-2.jpg 740w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                   src="images/projects/seafood.jpg"
                   alt="Логотип ресторану seafood"
-                  width="370"
-                  height="294"
                 />
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
@@ -194,10 +233,17 @@
               <div class="projects-list__img-overlay">
                 <img
                   class="projects-list__img"
+                  srcset="
+                    images/projects/mobile/img-s-@1x-3.jpg  450w,
+                    images/projects/mobile/img-s-@2x-3.jpg  900w,
+                    images/projects/tablet/img-m-@1x-3.jpg  354w,
+                    images/projects/tablet/img-m-@2x-3.jpg  708w,
+                    images/projects/desktop/img-L-@1x-3.jpg 370w,
+                    images/projects/desktop/img-L-@2x-3.jpg 740w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                   src="images/projects/prime.jpg"
                   alt="Наушники"
-                  width="370"
-                  height="294"
                 />
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
@@ -216,10 +262,17 @@
               <div class="projects-list__img-overlay">
                 <img
                   class="projects-list__img"
+                  srcset="
+                    images/projects/mobile/img-s-@1x-4.jpg  450w,
+                    images/projects/mobile/img-s-@2x-4.jpg  900w,
+                    images/projects/tablet/img-m-@1x-4.jpg  354w,
+                    images/projects/tablet/img-m-@2x-4.jpg  708w,
+                    images/projects/desktop/img-L-@1x-4.jpg 370w,
+                    images/projects/desktop/img-L-@2x-4.jpg 740w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                   src="images/projects/boxes.jpg"
                   alt="Коробки"
-                  width="370"
-                  height="294"
                 />
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
@@ -239,10 +292,17 @@
               <div class="projects-list__img-overlay">
                 <img
                   class="projects-list__image"
+                  srcset="
+                    images/projects/mobile/img-s-@1x-5.jpg  450w,
+                    images/projects/mobile/img-s-@2x-5.jpg  900w,
+                    images/projects/tablet/img-m-@1x-5.jpg  354w,
+                    images/projects/tablet/img-m-@2x-5.jpg  708w,
+                    images/projects/desktop/img-L-@1x-5.jpg 370w,
+                    images/projects/desktop/img-L-@2x-5.jpg 740w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                   src="images/projects/inspirationWebsite.jpg"
                   alt="Можливості проекту Inspiration has no Borders"
-                  width="370"
-                  height="294"
                 />
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
@@ -264,10 +324,17 @@
               <div class="projects-list__img-overlay">
                 <img
                   class="projects-list__img"
+                  srcset="
+                    images/projects/mobile/img-s-@1x-6.jpg  450w,
+                    images/projects/mobile/img-s-@2x-6.jpg  900w,
+                    images/projects/tablet/img-m-@1x-6.jpg  354w,
+                    images/projects/tablet/img-m-@2x-6.jpg  708w,
+                    images/projects/desktop/img-L-@1x-6.jpg 370w,
+                    images/projects/desktop/img-L-@2x-6.jpg 740w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                   src="images/projects/limitedEdition.jpg"
                   alt="Книжка Limited Edition"
-                  width="370"
-                  height="294"
                 />
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
@@ -289,10 +356,17 @@
               <div class="projects-list__img-overlay">
                 <img
                   class="projects-list__img"
+                  srcset="
+                    images/projects/mobile/img-s-@1x-7.jpg  450w,
+                    images/projects/mobile/img-s-@2x-7.jpg  900w,
+                    images/projects/tablet/img-m-@1x-7.jpg  354w,
+                    images/projects/tablet/img-m-@2x-7.jpg  708w,
+                    images/projects/desktop/img-L-@1x-7.jpg 370w,
+                    images/projects/desktop/img-L-@2x-7.jpg 740w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                   src="images/projects/lab.jpg"
                   alt="Логотип проекту Lab"
-                  width="370"
-                  height="294"
                 />
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
@@ -312,10 +386,17 @@
               <div class="projects-list__img-overlay">
                 <img
                   class="projects-list__img"
+                  srcset="
+                    images/projects/mobile/img-s-@1x-8.jpg  450w,
+                    images/projects/mobile/img-s-@2x-8.jpg  900w,
+                    images/projects/tablet/img-m-@1x-8.jpg  354w,
+                    images/projects/tablet/img-m-@2x-8.jpg  708w,
+                    images/projects/desktop/img-L-@1x-8.jpg 370w,
+                    images/projects/desktop/img-L-@2x-8.jpg 740w
+                  "
+                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
                   src="images/projects/business.jpg"
                   alt="Використання додатку Growing Business за допомогою ноутбука"
-                  width="370"
-                  height="294"
                 />
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
@@ -449,7 +530,7 @@
             >
               <p class="subscription-form__slogan">Підпишіться на розсилку</p>
               <div class="subscription-form__content">
-                <label>
+                <label class="subscription-form__label">
                   <input
                     name="email"
                     class="subscription-form__email-input"
@@ -469,5 +550,68 @@
         </div>
       </div>
     </footer>
+    <!-- Mobile-menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button
+        class="mobile-menu__close-btn js-close-menu"
+        type="button"
+        data-modal-close
+      >
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-mob-menu-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item">
+          <a href="./index.html" class="mobile-menu__nav-link">Студія</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a
+            href="#"
+            class="mobile-menu__nav-link mobile-menu__nav-link--accent"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a href="#" class="mobile-menu__nav-link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts-list">
+        <li class="mobile-menu__contacts-item">
+          <a
+            href="tel:380961111111"
+            class="mobile-menu__contact-link mobile-menu__contact-link--accent"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials">
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link"> Instagram </a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link">Twitter</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link">Facebook</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a href="#" class="mobile-menu__socials-link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

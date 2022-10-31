@@ -60,10 +60,14 @@
 
   &--area-padd {
     display: block;
-    height: 120px;
+    height: 70px;
     padding: 12px 16px;
 
     resize: none;
+
+    @media screen and (min-width: 480px) {
+      height: 120px;
+    }
   }
 
   &--placeholder-cl {

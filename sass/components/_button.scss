@@ -16,17 +16,17 @@
   letter-spacing: 0.06em;
   color: var(--btn-text-color);
 
-  @media screen and (min-width: 1200px) {
-    &--main {
-      width: 216px;
-    }
-  }
-
   &--content-indent {
     gap: 12px;
   }
 
   &--center {
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &--main {
+      width: 216px;
+    }
   }
 }
