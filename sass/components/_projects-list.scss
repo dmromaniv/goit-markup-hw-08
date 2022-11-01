@@ -27,17 +27,6 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 60px) / 3);
   }
-
-  // temporary
-  &:first-child .projects-list__card-border {
-    height: 146px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    &:first-child .projects-list__card-border {
-      height: auto;
-    }
-  }
 }
 
 .projects-list__img-overlay {
@@ -84,6 +73,10 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) and (max-width: (1199px + 0.5px)) {
+    height: calc(100% - 294px);
+  }
 }
 
 .projects-list__card-title {

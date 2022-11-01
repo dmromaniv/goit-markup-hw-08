@@ -24,7 +24,7 @@
       url("../images/hero/hero-img-s-@2x.jpg");
   }
 
-  @media (min-width: 481px) {
+  @media (min-width: 768px) {
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -44,7 +44,12 @@
     }
   }
 
-  @media (min-width: 789px) {
+  @media (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    max-width: 1600px;
+
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -62,13 +67,6 @@
         ),
         url("../images/hero/hero-L-@2x.jpg");
     }
-  }
-
-  @media screen and(min-width:1200px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    margin: 0 auto;
-    max-width: 1600px;
   }
 }
 

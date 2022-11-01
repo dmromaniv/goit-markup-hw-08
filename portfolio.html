@@ -140,20 +140,32 @@
           <ul class="projects-list">
             <li class="projects-list__item">
               <div class="projects-list__img-overlay">
-                <img
-                  class="projects-list__img"
-                  srcset="
-                    images/projects/mobile/img-s-@1x.jpg  450w,
-                    images/projects/mobile/img-s-@2x.jpg  900w,
-                    images/projects/tablet/img-m-@1x.jpg  354w,
-                    images/projects/tablet/img-m-@2x.jpg  708w,
-                    images/projects/desktop/img-L-@1x.jpg 370w,
-                    images/projects/desktop/img-L-@2x.jpg 740w
-                  "
-                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-                  src="images/projects/mobile/website.jpg"
-                  alt="Представлення команди вебсайту Технокряк"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/desktop/img-L-@1x.jpg 1x,
+                      ./images/projects/desktop/img-L-@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects/tablet/img-m-@1x.jpg 1x,
+                      ./images/projects/tablet/img-m-@2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    class="projects-list__img"
+                    srcset="
+                      images/projects/mobile/img-s-@1x.jpg 1x,
+                      images/projects/mobile/img-s-@2x.jpg 2x
+                    "
+                    src="images/projects/mobile/img-s-@1x.jpg"
+                    alt="Представлення команди вебсайту Технокряк"
+                  />
+                </picture>
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -170,20 +182,32 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__img-overlay">
-                <img
-                  class="projects-list__img"
-                  srcset="
-                    images/projects/mobile/img-s-@1x-1.jpg  450w,
-                    images/projects/mobile/img-s-@2x-1.jpg  900w,
-                    images/projects/tablet/img-m-@1x-1.jpg  354w,
-                    images/projects/tablet/img-m-@2x-1.jpg  708w,
-                    images/projects/desktop/img-L-@1x-1.jpg 370w,
-                    images/projects/desktop/img-L-@2x-1.jpg 740w
-                  "
-                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-                  src="images/projects/goldenStar.jpg"
-                  alt="Баскетболісти"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/desktop/img-L-@1x-1.jpg 1x,
+                      ./images/projects/desktop/img-L-@2x-1.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects/tablet/img-m-@1x-1.jpg 1x,
+                      ./images/projects/tablet/img-m-@2x-1.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    class="projects-list__img"
+                    srcset="
+                      images/projects/mobile/img-s-@1x-1.jpg 1x,
+                      images/projects/mobile/img-s-@2x-1.jpg 2x
+                    "
+                    src="images/projects/mobile/img-s-@1x-1.jpg"
+                    alt="Баскетболісти"
+                  />
+                </picture>
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -202,20 +226,32 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__img-overlay">
-                <img
-                  class="projects-list__img"
-                  srcset="
-                    images/projects/mobile/img-s-@1x-2.jpg  450w,
-                    images/projects/mobile/img-s-@2x-2.jpg  900w,
-                    images/projects/tablet/img-m-@1x-2.jpg  354w,
-                    images/projects/tablet/img-m-@2x-2.jpg  708w,
-                    images/projects/desktop/img-L-@1x-2.jpg 370w,
-                    images/projects/desktop/img-L-@2x-2.jpg 740w
-                  "
-                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-                  src="images/projects/seafood.jpg"
-                  alt="Логотип ресторану seafood"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/desktop/img-L-@1x-2.jpg 1x,
+                      ./images/projects/desktop/img-L-@2x-2.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects/tablet/img-m-@1x-2.jpg 1x,
+                      ./images/projects/tablet/img-m-@2x-2.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    class="projects-list__img"
+                    srcset="
+                      images/projects/mobile/img-s-@1x-2.jpg 1x,
+                      images/projects/mobile/img-s-@2x-2.jpg 2x
+                    "
+                    src="images/projects/mobile/img-s-@1x-2.jpg"
+                    alt="Логотип ресторану seafood"
+                  />
+                </picture>
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -231,20 +267,32 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__img-overlay">
-                <img
-                  class="projects-list__img"
-                  srcset="
-                    images/projects/mobile/img-s-@1x-3.jpg  450w,
-                    images/projects/mobile/img-s-@2x-3.jpg  900w,
-                    images/projects/tablet/img-m-@1x-3.jpg  354w,
-                    images/projects/tablet/img-m-@2x-3.jpg  708w,
-                    images/projects/desktop/img-L-@1x-3.jpg 370w,
-                    images/projects/desktop/img-L-@2x-3.jpg 740w
-                  "
-                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-                  src="images/projects/prime.jpg"
-                  alt="Наушники"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/desktop/img-L-@1x-3.jpg 1x,
+                      ./images/projects/desktop/img-L-@2x-3.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects/tablet/img-m-@1x-3.jpg 1x,
+                      ./images/projects/tablet/img-m-@2x-3.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    class="projects-list__img"
+                    srcset="
+                      images/projects/mobile/img-s-@1x-3.jpg 1x,
+                      images/projects/mobile/img-s-@2x-3.jpg 2x
+                    "
+                    src="images/projects/mobile/img-s-@1x-3.jpg"
+                    alt="Наушники"
+                  />
+                </picture>
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -260,20 +308,32 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__img-overlay">
-                <img
-                  class="projects-list__img"
-                  srcset="
-                    images/projects/mobile/img-s-@1x-4.jpg  450w,
-                    images/projects/mobile/img-s-@2x-4.jpg  900w,
-                    images/projects/tablet/img-m-@1x-4.jpg  354w,
-                    images/projects/tablet/img-m-@2x-4.jpg  708w,
-                    images/projects/desktop/img-L-@1x-4.jpg 370w,
-                    images/projects/desktop/img-L-@2x-4.jpg 740w
-                  "
-                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-                  src="images/projects/boxes.jpg"
-                  alt="Коробки"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/desktop/img-L-@1x-4.jpg 1x,
+                      ./images/projects/desktop/img-L-@2x-4.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects/tablet/img-m-@1x-4.jpg 1x,
+                      ./images/projects/tablet/img-m-@2x-4.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    class="projects-list__img"
+                    srcset="
+                      images/projects/mobile/img-s-@1x-4.jpg 1x,
+                      images/projects/mobile/img-s-@2x-4.jpg 2x
+                    "
+                    src="images/projects/mobile/img-s-@1x-4.jpg"
+                    alt="Коробки"
+                  />
+                </picture>
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -290,20 +350,32 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__img-overlay">
-                <img
-                  class="projects-list__image"
-                  srcset="
-                    images/projects/mobile/img-s-@1x-5.jpg  450w,
-                    images/projects/mobile/img-s-@2x-5.jpg  900w,
-                    images/projects/tablet/img-m-@1x-5.jpg  354w,
-                    images/projects/tablet/img-m-@2x-5.jpg  708w,
-                    images/projects/desktop/img-L-@1x-5.jpg 370w,
-                    images/projects/desktop/img-L-@2x-5.jpg 740w
-                  "
-                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-                  src="images/projects/inspirationWebsite.jpg"
-                  alt="Можливості проекту Inspiration has no Borders"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/desktop/img-L-@1x-5.jpg 1x,
+                      ./images/projects/desktop/img-L-@2x-5.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects/tablet/img-m-@1x-5.jpg 1x,
+                      ./images/projects/tablet/img-m-@2x-5.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    class="projects-list__img"
+                    srcset="
+                      images/projects/mobile/img-s-@1x-5.jpg 1x,
+                      images/projects/mobile/img-s-@2x-5.jpg 2x
+                    "
+                    src="images/projects/mobile/img-s-@1x-5.jpg"
+                    alt="Можливості проекту Inspiration has no Borders"
+                  />
+                </picture>
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -322,20 +394,32 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__img-overlay">
-                <img
-                  class="projects-list__img"
-                  srcset="
-                    images/projects/mobile/img-s-@1x-6.jpg  450w,
-                    images/projects/mobile/img-s-@2x-6.jpg  900w,
-                    images/projects/tablet/img-m-@1x-6.jpg  354w,
-                    images/projects/tablet/img-m-@2x-6.jpg  708w,
-                    images/projects/desktop/img-L-@1x-6.jpg 370w,
-                    images/projects/desktop/img-L-@2x-6.jpg 740w
-                  "
-                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-                  src="images/projects/limitedEdition.jpg"
-                  alt="Книжка Limited Edition"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/desktop/img-L-@1x-6.jpg 1x,
+                      ./images/projects/desktop/img-L-@2x-6.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects/tablet/img-m-@1x-6.jpg 1x,
+                      ./images/projects/tablet/img-m-@2x-6.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    class="projects-list__img"
+                    srcset="
+                      images/projects/mobile/img-s-@1x-6.jpg 1x,
+                      images/projects/mobile/img-s-@2x-6.jpg 2x
+                    "
+                    src="images/projects/mobile/img-s-@1x-6.jpg"
+                    alt="Книжка Limited Edition"
+                  />
+                </picture>
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -354,20 +438,32 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__img-overlay">
-                <img
-                  class="projects-list__img"
-                  srcset="
-                    images/projects/mobile/img-s-@1x-7.jpg  450w,
-                    images/projects/mobile/img-s-@2x-7.jpg  900w,
-                    images/projects/tablet/img-m-@1x-7.jpg  354w,
-                    images/projects/tablet/img-m-@2x-7.jpg  708w,
-                    images/projects/desktop/img-L-@1x-7.jpg 370w,
-                    images/projects/desktop/img-L-@2x-7.jpg 740w
-                  "
-                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-                  src="images/projects/lab.jpg"
-                  alt="Логотип проекту Lab"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/desktop/img-L-@1x-7.jpg 1x,
+                      ./images/projects/desktop/img-L-@2x-7.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects/tablet/img-m-@1x-7.jpg 1x,
+                      ./images/projects/tablet/img-m-@2x-7.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    class="projects-list__img"
+                    srcset="
+                      images/projects/mobile/img-s-@1x-7.jpg 1x,
+                      images/projects/mobile/img-s-@2x-7.jpg 2x
+                    "
+                    src="images/projects/mobile/img-s-@1x-7.jpg"
+                    alt="Логотип проекту Lab"
+                  />
+                </picture>
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -384,20 +480,32 @@
             </li>
             <li class="projects-list__item">
               <div class="projects-list__img-overlay">
-                <img
-                  class="projects-list__img"
-                  srcset="
-                    images/projects/mobile/img-s-@1x-8.jpg  450w,
-                    images/projects/mobile/img-s-@2x-8.jpg  900w,
-                    images/projects/tablet/img-m-@1x-8.jpg  354w,
-                    images/projects/tablet/img-m-@2x-8.jpg  708w,
-                    images/projects/desktop/img-L-@1x-8.jpg 370w,
-                    images/projects/desktop/img-L-@2x-8.jpg 740w
-                  "
-                  sizes="(min-width:1200px) 370px, (min-width:768px) 354px, (min-width:480px) 450px, 100vw"
-                  src="images/projects/business.jpg"
-                  alt="Використання додатку Growing Business за допомогою ноутбука"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/projects/desktop/img-L-@1x-8.jpg 1x,
+                      ./images/projects/desktop/img-L-@2x-8.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/projects/tablet/img-m-@1x-8.jpg 1x,
+                      ./images/projects/tablet/img-m-@2x-8.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+
+                  <img
+                    class="projects-list__img"
+                    srcset="
+                      images/projects/mobile/img-s-@1x-8.jpg 1x,
+                      images/projects/mobile/img-s-@2x-8.jpg 2x
+                    "
+                    src="images/projects/mobile/img-s-@1x-8.jpg"
+                    alt="Використання додатку Growing Business за допомогою ноутбука"
+                  />
+                </picture>
                 <div class="projects-list__overlay-content">
                   <p class="projects-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
